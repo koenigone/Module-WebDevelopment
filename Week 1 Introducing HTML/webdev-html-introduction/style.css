@@ -102,3 +102,8 @@ footer {
 footer .uni-span {
     color: rgb(207, 53, 143);
 }
+
+.extra-pages-title {
+    margin: 0 auto;
+    text-align: center;
+}
