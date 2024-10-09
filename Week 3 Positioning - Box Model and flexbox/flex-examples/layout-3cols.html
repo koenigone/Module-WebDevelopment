@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox Examples: Three Column Layout</title>
+    <style>
+      .container{
+        max-width: 1200px;
+        margin:auto;
+      }
+      header{
+        background-color: #ccc;
+      }
+      .leftMenu{
+        flex:0 0 25%;
+        background-color: #ccc;
+      }
+      section{
+        display: flex;
+        gap:40px;
+      }
+      aside{
+        flex:0 0 25%;
+        background-color: #ccc;
+      }
+      footer{
+        margin-top:20px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>My Heading</h1>
+      </header>
+      <section>
+        <div class="leftMenu">
+          <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+        <main>
+          <h2>Main Content</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis debitis adipisci fugiat, voluptates suscipit recusandae eos ipsum veniam repellat id, accusamus iste eum, velit earum nostrum porro pariatur in! Fugit, dolores natus veniam sed eum repellendus minima quas deleniti necessitatibus.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis debitis adipisci fugiat, voluptates suscipit recusandae eos ipsum veniam repellat id, accusamus iste eum, velit earum nostrum porro pariatur in! Fugit, dolores natus veniam sed eum repellendus minima quas deleniti necessitatibus.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, est.</p>
+        </main>
+        <aside>
+          <h3>Side Bar</h3>
+          <p>Some Side information</p>
+        </aside>
+      </section>
+      <footer>
+        My Footer
+      </footer>
+    </div>
+  </body>
+</html>

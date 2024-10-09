@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex Examples</title>
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+      header {
+        background-color: #ccc;
+      }
+      section {
+        display: flex;
+        gap: 40px;
+      }
+      section > div {
+        border: 1px solid #ccc;
+        flex: 1;
+        padding: 20px;
+      }
+      section > div img {
+        width: 100%;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        margin-top: 20px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>My Heading</h1>
+      </header>
+
+      <main>
+        <section>
+          <div>
+            <h2>Some Item #1</h2>
+            <div>
+              <img src="https://picsum.photos/200/150" alt="Placeholder" />
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus, similique eveniet. Error, quaerat? Quas est delectus
+                iste officia eaque iure provident officiis nostrum, saepe quo
+                architecto itaque perferendis voluptates sunt tempore culpa
+                neque aliquam cumque dolor! Laudantium animi iusto rerum fuga.
+                Vel obcaecati consectetur tempore.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h2>Some Item #2</h2>
+            <div>
+              <img src="https://picsum.photos/200/150" alt="Placeholder" />
+            </div>
+            <div><p>Not much Lorem ipsum.</p></div>
+          </div>
+          <div>
+            <h2>Some Item #3</h2>
+            <div>
+              <img src="https://picsum.photos/200/150" alt="Placeholder" />
+            </div>
+            <div>
+              <p>
+                Error, quaerat? Quas est delectus iste officia eaque iure
+                provident officiis nostrum, saepe quo architecto itaque
+                perferendis voluptates sunt tempore culpa neque aliquam cumque
+                dolor! Laudantium animi iusto rerum fuga. Vel obcaecati
+                consectetur tempore.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>My Footer</footer>
+    </div>
+  </body>
+</html>
