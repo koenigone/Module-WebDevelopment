@@ -97,12 +97,34 @@ main .left-float {
     width:100%;
 }
 
-.sidebar{
+.sidebar {
     padding:20px 40px;	
     border:1px solid #ccc;
     border-radius:8px;
     margin-top: 70px;
-    flex:0 0 200px;
+    flex: 0 0 200px;
+}
+
+.left-menu {
+    flex: 1 0 100px;
+    padding: 30px;
+}
+
+.left-menu ul {
+    list-style-type: none;
+}
+
+.left-menu ul li {
+    margin-bottom: 20px;
+}
+
+.left-menu ul li a {
+    color: rgb(241, 213, 53);
+    text-decoration: underline;
+}
+
+.left-menu ul li a:hover {
+    color: rgb(224, 198, 47);
 }
 
 .divide-line {
