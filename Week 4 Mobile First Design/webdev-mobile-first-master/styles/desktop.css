@@ -3,6 +3,7 @@ h1,
 h2 {
   font-family: "Raleway", sans-serif;
 }
+
 .container {
   margin: auto;
   max-width: 1200px;
@@ -19,6 +20,16 @@ header h1 a:hover {
 #logo {
   padding: 10px;
 }
+
+.burger {
+  display: none;
+}
+
+nav {
+  /* for burger menu */
+  overflow: auto; 
+}
+
 nav li a:hover {
   color: #7e8aa2;
 }
@@ -74,3 +85,41 @@ tr:nth-child(odd) {
   background-color: #ccc;
 }
 /* Form Styling Needs Adding */
+form {
+  width: 50%;
+  margin: auto;
+}
+
+form > div {
+  margin: 15px 0;
+  display: flex;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+}
+
+input[type="submit"] {
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.submitContainer {
+  justify-content: flex-end;
+}
+input[type="submit"] {
+  width: auto;
+  margin: 0;
+}
