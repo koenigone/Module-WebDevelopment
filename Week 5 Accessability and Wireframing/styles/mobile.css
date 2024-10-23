@@ -26,6 +26,10 @@ header h1 {
   margin: 0;
 }
 
+header a {
+  color: white;
+}
+
 nav ul {
   list-style: none;
   padding-left: 0;
@@ -60,9 +64,43 @@ section img {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="tel"] {
   padding: 5px;
   font-size: 1.2rem;
+  margin: 10px;
+  width: 90%;
+}
+
+textarea {
+  margin: 10px;
+  width: 90%;
+  height: 200px;
+}
+
+#interest {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submitContainer {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.submitContainer input {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(42, 144, 240);
+  padding: 15px;
+  font-size: 15px;
+  color: white;
+}
+
+.submitContainer input:active {
+  background-color: rgb(17, 85, 148);
 }
 
 footer {

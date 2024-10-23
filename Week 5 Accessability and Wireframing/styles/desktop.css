@@ -77,3 +77,17 @@ tr:nth-child(odd) {
   background-color: #ccc;
 }
 /* Form Styling Needs Adding */
+
+
+.submitContainer input {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(42, 144, 240);
+  padding: 15px;
+  font-size: 15px;
+  color: white;
+}
+
+.submitContainer input:hover {
+  background-color: rgb(219, 219, 219);
+}
