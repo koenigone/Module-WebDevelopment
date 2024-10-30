@@ -1,16 +1,3 @@
-let mainBtn = document.getElementById("myTestBtn");
-let red    = "red";
-let green  = "green";
-let blue   = "blue";
-let normal = "white";
-let coloursArr = [red, green, blue, normal];
-let value  = 0;
-
-mainBtn.addEventListener("click", ()=> {
-  document.body.style.backgroundColor = coloursArr[value];
-  value = (value + 1) % coloursArr.length;
-});
-
 let redBtn = document.querySelector(".red");
 let greenBtn = document.querySelector(".green");
 let blueBtn = document.querySelector(".blue");
@@ -27,4 +14,18 @@ blueBtn.addEventListener("click", ()=> {
 });
 resetBtn.addEventListener("click", ()=> {
     document.body.setAttribute("class", "reset");
+});
+
+// change the clours in order button
+let mainBtn = document.getElementById("myTestBtn");
+let red    = "red";
+let green  = "green";
+let blue   = "blue";
+let normal = "white";
+let coloursArr = [red, green, blue, normal];
+let value  = 0;
+
+mainBtn.addEventListener("click", ()=> {
+  document.body.style.backgroundColor = coloursArr[value];
+  value = (value + 1) % coloursArr.length;
 });
