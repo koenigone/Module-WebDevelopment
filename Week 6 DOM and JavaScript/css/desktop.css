@@ -70,3 +70,16 @@ input[type="submit"] {
   width: 150px;
   margin: 0;
 }
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.reset {
+  background-color: white;
+}
