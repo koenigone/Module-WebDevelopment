@@ -26,6 +26,7 @@
         </nav>
         <div class="content">
           <h2>Convert Pounds to Euros</h2>
+          <h1 id="output"></h1>
           <section>
             <div>
               <form id="myForm">
@@ -34,7 +35,7 @@
                   <input type="text" id="pounds" />
                 </p>
                 <p class="submitBtn">
-                  <input type="submit" value="Convert to Euros" />
+                  <input type="submit" id="mainExchange" value="Convert to Euros" />
                 </p>
               </form>
             </div>
@@ -47,5 +48,6 @@
 
       <footer>&copy; 2024 mustbebuilt</footer>
     </div>
+    <script src="script/exchangeRate.js" defer></script>
   </body>
 </html>

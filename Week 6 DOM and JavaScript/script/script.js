@@ -13,7 +13,7 @@ blueBtn.addEventListener("click", ()=> {
     document.body.setAttribute("class", "blue");
 });
 resetBtn.addEventListener("click", ()=> {
-    document.body.setAttribute("class", "reset");
+    document.body.removeAttribute("class", "reset");
 });
 
 // change the clours in order button
@@ -26,6 +26,11 @@ let coloursArr = [red, green, blue, normal];
 let value  = 0;
 
 mainBtn.addEventListener("click", ()=> {
-  document.body.style.backgroundColor = coloursArr[value];
-  value = (value + 1) % coloursArr.length;
+    for (i = 0; i < coloursArr.length; i++) {
+        value++;
+        if (value === 3) {
+            value = 0;
+        }
+        document.body.style.backgroundColor = coloursArr[value];
+    }
 });
