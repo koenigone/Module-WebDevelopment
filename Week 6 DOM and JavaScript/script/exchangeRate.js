@@ -12,6 +12,6 @@ myForm.addEventListener("submit", (e)=> {
         output.innerHTML = "input must be a number";
     } else {
         output.removeAttribute("class");
-        output.innerHTML = "£" + exchangeRate;
+        output.innerHTML = "£" + Math.floor(exchangeRate * 100) / 100;;
     }
 })
