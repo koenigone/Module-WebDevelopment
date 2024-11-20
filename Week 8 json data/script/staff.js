@@ -10,7 +10,7 @@ fetch("data/staff.json")
             nameCell.textContent = `${item.first_name} ${item.last_name}`;
             emailCell.textContent = item.email;
             row.appendChild(nameCell);
-            row.appendChild(emailCell);                
+            row.appendChild(emailCell);        
             staffTable.appendChild(row);
         });
     })
